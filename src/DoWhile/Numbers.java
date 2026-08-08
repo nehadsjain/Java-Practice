@@ -10,6 +10,6 @@ public class Numbers {
         do{
             System.out.print(i+"\t");
             i++;
-        }while (i<=10);
+        }while (i<=n);
     }
 }
