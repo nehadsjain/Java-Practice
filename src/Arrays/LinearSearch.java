@@ -5,9 +5,13 @@ import java.util.Scanner;
 public class LinearSearch {
     static void linearSearch(int a[], int k){
         boolean found = false;
-        int pos=0;
+        int pos=-1;
         for (int i=0;i<a.length;i++){
-            if(a[i] == k) pos=i; found=true;
+            if(a[i] == k){
+                pos=i;
+                found=true;
+                break;
+            }
         }
         if(found){
             System.out.println("Element found at index:"+pos);
