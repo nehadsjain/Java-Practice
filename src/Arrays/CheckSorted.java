@@ -4,13 +4,11 @@ import java.util.Scanner;
 
 public class CheckSorted {
     static void arraySorted(int[] a){
-        boolean sorted = false;
+        boolean sorted = true;
         for (int i=1;i<a.length;i++){
             if(a[i]<a[i-1]){
                 sorted=false;
                 break;
-            }else {
-                sorted=true;
             }
         }
         if(sorted){
