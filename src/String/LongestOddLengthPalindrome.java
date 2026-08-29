@@ -9,7 +9,6 @@ public class LongestOddLengthPalindrome {
         int maxLength=0,currLength;
         int maxStart=0;
         for (int i=0;i<str.length();i++){
-
                 left =i;
                 right =i;
             while (left>=0 && right<str.length() && str.charAt(left) == str.charAt(right)){
